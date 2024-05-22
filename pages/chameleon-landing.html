@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/inc/style.css">
-    <script src="/js/custom-js.js"></script>
+    <link rel="stylesheet" href="../inc/style.css">
+    <script src="../js/custom-js.js"></script>
+    <script src="https://kit.fontawesome.com/dabdd3c5b7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Chamelyon</title>
@@ -13,7 +14,7 @@
             <div class="chamelyon-header container">
                 <div class="row chamelyon-row">
                     <div class="col-md-6 logo-col">
-                        <img class="site-logo" src="/images/chamelyon-logo.jpg">
+                        <img class="site-logo" src="../images/chamelyon-logo.jpg">
                     </div>
                     <div class="col-md-3 menu-col">
                         <nav class="main-nav">
@@ -31,6 +32,32 @@
             </div> 
         </header>
         <main>
+            <div id="searchContainer">
+                <div class="form-title">
+                    <h2 class="title-form">EXPLORER</h2>
+                </div>
+                <form id="search_form" class="search-form">
+                  <div class="select">
+                    <select id="format" name="format">
+                      <option value="all-filters" selected> All FIlters </option>
+                      <option value="example-1">Example 1</option>
+                      <option value="example-2">Example 2</option>
+                      <option value="example-3">Example 3</option>
+                    </select>
+                    <div class="select__arrow"></div>
+                  </div>
+              
+                  <div role="search" class="search-wrapper">
+                    <input type="search" name="search" aria-label="Search" placeholder="Search by address / Txn Hash / Block / Token / Domain Name">
+                    <button type="submit" value="submit" name="submit"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="latest-hash">
+                        <p class="hash-pre">Latest Hash</p> <p class="hash-title">6dc799...3d9343</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
             <section class="records">
                 <!-- Display CHAMBLOCK records here -->
             </section>
@@ -42,21 +69,49 @@
             <div class="footer-container container">
                 <div class="row footer-row">
                     <div class="col-md-6 footer-col-1">
-
+                        <div class="footer-logo">
+                            <img class="footer-img" src="../images/chamelyon-logo.jpg">
+                        </div>
+                        <div class="footer-description">
+                            <p class="footer-p">
+                                Cham Explorer is a Block Explorer and Analytics Platform for Chamelyon, a decentralized certified platform.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-2 footer-col-2">
                         <div class="footer-title">
                             <h4>Contacts</h4>
+                            <a href="#"><i class="fa-solid fa-envelope"></i>info@chamelyon.com</a>
+                            <a href="#"><i class="fa-solid fa-mobile"></i>333 930 9437</a>
+                            <div class="social-media">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a> 
+                                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a> 
+                                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-2 footer-col-3">
                         <div class="footer-title">
                             <h4>Company</h4>
+                            <nav class="footer-menu">
+                                <ul class="footer-list">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Brand Assets</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                     <div class="col-md-2 footer-col-4">
                         <div class="footer-title">
                             <h4>Community</h4>
+                            <nav class="footer-menu">
+                                <ul class="footer-list">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Brand Assets</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
