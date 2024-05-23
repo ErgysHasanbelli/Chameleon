@@ -1,1 +1,10 @@
 /* This is the style.css file for Chameleon landing page */
+.black-box {
+    background-color: #000;
+}
+.right-side {
+    display: flex;
+}
+.left.side {
+    display: flex;
+}
